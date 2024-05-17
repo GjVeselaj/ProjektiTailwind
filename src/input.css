@@ -1,0 +1,105 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    font-family: "Jost", sans-serif;
+}
+
+.meny { 
+    display: grid;
+    grid-template-columns: 1fr 2.5fr 1fr;
+}
+
+.success h1 {
+    font-size: 36px;
+    font-weight: 700;
+}
+.success h4 {
+    font-size: 24px;
+    font-weight: 500;
+}
+.one {
+    height: 400px;
+    width: 100%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+    transition: 0.7s;
+    object-fit: cover;
+    &:hover {
+        transform: scale(1.2);
+    }
+    a {
+        color: black;
+        text-decoration: none;
+        font-size: 25px;
+        font-weight: 300;
+        font-family: nunito, Sans-serif;
+
+        &:hover {
+            color: #fff;
+            
+        }
+    }
+}
+.dyshek {
+    background-image: url(./Assets/DYSHEKU-HIBRID-Edited-design.jpg);
+}
+.gjume {
+    background-image: url(./Assets/GJUMI-KATEGORIA.jpg);   
+}
+.tryeze {
+    background-image: url(./Assets/Tryeze-Kategoria.jpg);   
+}
+.kuzhine {
+    background-image: url(./Assets/Kuzhina-Kategoria.jpg);
+}
+.dhome {
+    background-image: url(./Assets/Dhoma-e-ndenjes-Kategoria.jpg);
+}
+.udhetim {
+    background-image: url(./Assets/Udhetim-Kategoria.jpg);
+}
+.femije {
+    background-image: url(./Assets/Kids-Kategoria.jpg);
+}
+.banjo {
+    background-image: url(./Assets/Banjo-Kategoria.jpg);
+}
+.kopsht {
+    background-image: url(./Assets/Kopshti-Categories.jpg);
+}
+.princ {
+    background-image: url(./Assets/Princ-categories.jpg);
+}
+
+h2 {
+    font-size: 24px;
+    line-height: 1.5;
+    margin: 30px;
+}
+
+p {
+    font-size: 15px;
+    font-weight: 500;
+    margin: 30px;
+    line-height: 1.2;
+}
+
+h3 {
+    line-height: 3;
+}
+
+.end {
+    background-color: #3b4368;
+}
+
+
+#menuToggler:checked+.menu {
+    display: block;
+    background-color: #fff;
+    
+}
